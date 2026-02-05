@@ -12,4 +12,6 @@ services:
         image: mysql:8.0
         name: eval-mysql
         network: eval-network
+      networks: 
+        driver: eval-network
      
