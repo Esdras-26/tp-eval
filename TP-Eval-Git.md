@@ -106,6 +106,10 @@ Réalisez les opérations suivantes dans l'ordre :
 
 1. **Créez** une branche nommée `feature/ajout-script`
 
+```bash
+git branch feature/ajout-script
+```
+
 2. **Basculez** vers cette nouvelle branche
 
 3. **Créez** un fichier `script.js` contenant le texte "console.log('Hello Git');"
