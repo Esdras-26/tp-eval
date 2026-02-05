@@ -126,7 +126,15 @@ git branch feature/ajout-script
 
 9. **Affichez** l'historique graphique avec `git log --oneline --graph --all`
 
+```bash
+git log --oneline --graph --all
+```
+
 10. **Listez** toutes les branches existantes
+
+```bash
+git branch
+```
 
 ### Barème : 5 points
 
