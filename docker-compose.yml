@@ -1,0 +1,15 @@
+services:
+     web:
+          container_name: eval-web
+          image: nginx:alpine
+          volumes: 
+               - ./app:/var/www/html
+               - ./log:/var/log/apache2/
+          ports:
+               - 8080:80
+          network: eval-network
+      db:
+        image: mysql:8.0
+        name: eval-mysql
+        network: eval-network
+     
