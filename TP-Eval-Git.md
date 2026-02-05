@@ -9,6 +9,7 @@
 ## Objectifs
 
 Ce TP vise à évaluer vos compétences sur :
+
 - La manipulation d'un dépôt Git local avec les commandes fondamentales
 - La gestion des branches et la fusion avec git merge
 
@@ -17,6 +18,7 @@ Ce TP vise à évaluer vos compétences sur :
 ## Partie 1 : Commandes Git de base et commits (5 minutes)
 
 ### Objectif
+
 Manipuler un dépôt Git local avec les commandes fondamentales
 
 ### Consignes
@@ -27,17 +29,56 @@ Réalisez les opérations suivantes dans l'ordre :
 
 2. **Créez** un nouveau dossier `projet-eval` et **initialisez** un dépôt Git
 
+```bash
+
+mkdir projet-eval
+git init
+
+```
+
 3. **Créez** trois fichiers : `index.html`, `style.css`, et `README.md`
+
+```bash
+
+touch index.html
+touch README.md
+touch style.css
+
+```
 
 4. **Ajoutez** uniquement `index.html` au staging
 
+```bash
+
+git add index.html
+
+```
+
 5. **Créez** un commit avec le message "feat: Ajoute index.html"
+
+```bash
+
+git commit -m "feat: Ajoute index.html"
+
+```
 
 6. **Modifiez** le fichier `index.html` en ajoutant une ligne de code
 
 7. **Ajoutez** tous les fichiers restants (y compris le `index.html` modifié) au staging
 
+```bash
+
+git add ."
+
+```
+
 8. **Créez** un second commit avec le message "feat: Ajoute style.css et README"
+
+```bash
+
+git commit -m "feat: Ajoute Ajoute style.css et README"
+
+```
 
 9. **Affichez** l'historique des commits en mode condensé
 
@@ -56,6 +97,7 @@ Réalisez les opérations suivantes dans l'ordre :
 ## Partie 2 : Branches et fusion (5 minutes)
 
 ### Objectif
+
 Créer des branches, effectuer des commits et fusionner avec merge
 
 ### Consignes
